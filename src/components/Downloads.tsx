@@ -2,7 +2,7 @@
 
 import { Download, FileJson, GitBranch, Package } from "lucide-react";
 import facts from "@/data/cluster_facts.json";
-import { EXPORT_URL, RELEASE_URL, REPO_URL, WEIGHTS_URL } from "@/lib/content";
+import { EXPORT_URL, RELEASE_URL, REPO_URL, TB_EVENTS_URL, WEIGHTS_URL } from "@/lib/content";
 import { Stagger, StaggerItem } from "./Reveal";
 
 const ITEMS = [
@@ -34,9 +34,10 @@ backbone = torch.hub.load("facebookresearch/dinov2", "dinov2_vits14", pretrained
 backbone.load_state_dict(torch.load("dinov2_vits14_simsiam_imagenette_backbone.pt", map_location="cpu"))
 backbone.eval()  # forward(x) -> embedding CLS de 384 dims`;
 
-const TB_SNIPPET = `# en el pod (o con el tar descargado)
-tensorboard --logdir runs --port 6006 --bind_all
-# URL cuando Alfredo agregue jupyter-server-proxy a la imagen:
+const TB_SNIPPET = `# local, con los event files del release
+tar xzf tb_events.tar.gz && pip install tensorboard
+tensorboard --logdir runs --port 6006   # http://localhost:6006
+# en el clúster, cuando Alfredo agregue jupyter-server-proxy:
 # https://jupyter.unabia.unab.edu.co/user/nmoreno534/proxy/6006/`;
 
 export function Downloads() {
@@ -70,7 +71,10 @@ export function Downloads() {
           <h3 className="text-sm font-medium">TensorBoard</h3>
           <pre className="mono mt-3 overflow-x-auto rounded-lg bg-bg p-3 text-xs leading-relaxed text-muted">{TB_SNIPPET}</pre>
           <p className="mt-2 text-xs text-muted-2">
-            Release completo:{" "}
+            <a className="text-sky underline-offset-2 hover:underline" href={TB_EVENTS_URL} target="_blank" rel="noreferrer">
+              Descargar event files (.tar.gz)
+            </a>{" "}
+            · Release completo:{" "}
             <a className="text-sky underline-offset-2 hover:underline" href={RELEASE_URL} target="_blank" rel="noreferrer">
               v0.1.0-ddp10
             </a>

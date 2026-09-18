@@ -4,6 +4,7 @@ export const REPO_URL = "https://github.com/nicolas2601/nicolas-pruebas-gpu";
 export const RELEASE_URL = `${REPO_URL}/releases/tag/v0.1.0-ddp10`;
 export const WEIGHTS_URL = `${REPO_URL}/releases/download/v0.1.0-ddp10/dinov2_vits14_simsiam_imagenette_backbone.pt`;
 export const EXPORT_URL = `${REPO_URL}/releases/download/v0.1.0-ddp10/nicolas_pruebas_export.tar.gz`;
+export const TB_EVENTS_URL = `${REPO_URL}/releases/download/v0.1.0-ddp10/tb_events.tar.gz`;
 
 export type Spec = { label: string; value: string; detail?: string; accent?: "amber" | "sky" };
 
