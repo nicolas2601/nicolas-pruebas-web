@@ -1,0 +1,12 @@
+2026-09-17 20:07:29 config {'data_root': 'data', 'output_dir': 'runs/smoke', 'backbone': 'dinov2_vits14', 'pretrained': True, 'resolution': 112, 'batch_per_gpu': 64, 'epochs': 1, 'lr_backbone': 1e-05, 'lr_heads': 0.001, 'weight_decay': 0.0001, 'warmup_steps': 100, 'precision': 'bf16', 'workers': 4, 'seed': 42, 'max_steps': 30, 'limit_unlabeled': 4096, 'knn_every': 1, 'knn_k': 20, 'resume': ''}
+2026-09-17 20:07:29 world_size=1 device=cuda:0
+2026-09-17 20:15:16 config {'data_root': 'data', 'output_dir': 'runs/smoke', 'dataset': 'imagenette', 'backbone': 'dinov2_vits14', 'pretrained': True, 'resolution': 112, 'batch_per_gpu': 64, 'epochs': 1, 'lr_backbone': 1e-05, 'lr_heads': 0.001, 'weight_decay': 0.0001, 'warmup_steps': 100, 'precision': 'bf16', 'workers': 4, 'seed': 42, 'max_steps': 30, 'limit_unlabeled': 4096, 'knn_every': 1, 'knn_k': 20, 'resume': ''}
+2026-09-17 20:15:16 world_size=1 device=cuda:0
+2026-09-17 20:16:02 pool=4096 steps/epoch=64 total_steps=30
+2026-09-17 20:18:26 config {'data_root': 'data', 'output_dir': 'runs/smoke', 'dataset': 'imagenette', 'backbone': 'dinov2_vits14', 'pretrained': True, 'resolution': 112, 'batch_per_gpu': 64, 'epochs': 1, 'lr_backbone': 1e-05, 'lr_heads': 0.001, 'weight_decay': 0.0001, 'warmup_steps': 100, 'precision': 'bf16', 'workers': 4, 'seed': 42, 'max_steps': 30, 'limit_unlabeled': 4096, 'knn_every': 1, 'knn_k': 20, 'resume': ''}
+2026-09-17 20:18:26 world_size=1 device=cuda:0
+2026-09-17 20:18:26 WARNING /dev/shm is 67 MB; forcing workers=0 (requested 4)
+2026-09-17 20:18:28 pool=4096 steps/epoch=64 total_steps=30
+2026-09-17 20:18:45 epoch=0 knn_top1=0.9761
+2026-09-17 20:18:51 step=20 loss=-0.2342 std_ratio=1.01 img/s=215 vram=2.2GB
+2026-09-17 20:19:11 epoch=1 knn_top1=0.9814

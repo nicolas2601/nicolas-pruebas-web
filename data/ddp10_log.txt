@@ -1,0 +1,35 @@
+2026-09-17 20:23:48 config {'data_root': 'data', 'output_dir': 'runs/ddp10', 'dataset': 'imagenette', 'backbone': 'dinov2_vits14', 'pretrained': True, 'resolution': 112, 'batch_per_gpu': 128, 'epochs': 10, 'lr_backbone': 1e-05, 'lr_heads': 0.001, 'weight_decay': 0.0001, 'warmup_steps': 100, 'precision': 'bf16', 'workers': 8, 'seed': 42, 'max_steps': 0, 'limit_unlabeled': 0, 'knn_every': 2, 'knn_k': 20, 'resume': ''}
+2026-09-17 20:23:48 world_size=2 device=cuda:0
+2026-09-17 20:23:48 WARNING /dev/shm is 67 MB; forcing workers=0 (requested 8)
+2026-09-17 20:23:51 pool=9469 steps/epoch=36 total_steps=360
+2026-09-17 20:24:05 epoch=0 knn_top1=0.9761
+2026-09-17 20:24:18 step=20 loss=-0.3407 std_ratio=1.00 img/s=400 vram=3.9GB
+2026-09-17 20:24:32 step=40 loss=-0.8709 std_ratio=1.00 img/s=425 vram=3.9GB
+2026-09-17 20:24:45 step=60 loss=-0.9311 std_ratio=1.00 img/s=417 vram=3.9GB
+2026-09-17 20:25:07 epoch=2 knn_top1=0.9834
+2026-09-17 20:25:12 step=80 loss=-0.9346 std_ratio=1.00 img/s=438 vram=3.9GB
+2026-09-17 20:25:24 step=100 loss=-0.9386 std_ratio=1.00 img/s=426 vram=3.9GB
+2026-09-17 20:25:39 step=120 loss=-0.9256 std_ratio=1.00 img/s=403 vram=3.9GB
+2026-09-17 20:25:52 step=140 loss=-0.9196 std_ratio=0.99 img/s=423 vram=3.9GB
+2026-09-17 20:26:09 epoch=4 knn_top1=0.9781
+2026-09-17 20:26:18 step=160 loss=-0.9330 std_ratio=0.99 img/s=441 vram=3.9GB
+2026-09-17 20:26:31 step=180 loss=-0.9306 std_ratio=0.99 img/s=415 vram=3.9GB
+2026-09-17 20:26:45 step=200 loss=-0.9416 std_ratio=0.99 img/s=431 vram=3.9GB
+2026-09-17 20:27:09 epoch=6 knn_top1=0.9822
+2026-09-17 20:27:12 step=220 loss=-0.9544 std_ratio=0.99 img/s=410 vram=3.9GB
+2026-09-17 20:27:25 step=240 loss=-0.9601 std_ratio=0.99 img/s=406 vram=3.9GB
+2026-09-17 20:27:40 step=260 loss=-0.9588 std_ratio=0.98 img/s=419 vram=3.9GB
+2026-09-17 20:27:53 step=280 loss=-0.9534 std_ratio=0.98 img/s=407 vram=3.9GB
+2026-09-17 20:28:13 epoch=8 knn_top1=0.9822
+2026-09-17 20:28:20 step=300 loss=-0.9496 std_ratio=0.99 img/s=433 vram=3.9GB
+2026-09-17 20:28:33 step=320 loss=-0.9584 std_ratio=0.99 img/s=425 vram=3.9GB
+2026-09-17 20:28:47 step=340 loss=-0.9587 std_ratio=0.98 img/s=421 vram=3.9GB
+2026-09-17 20:29:00 step=360 loss=-0.9616 std_ratio=0.99 img/s=423 vram=3.9GB
+2026-09-17 20:29:14 epoch=10 knn_top1=0.9819
+2026-09-17 20:30:27 config {'data_root': 'data', 'output_dir': 'runs/ddp10', 'dataset': 'imagenette', 'backbone': 'dinov2_vits14', 'pretrained': True, 'resolution': 112, 'batch_per_gpu': 128, 'epochs': 11, 'lr_backbone': 1e-05, 'lr_heads': 0.001, 'weight_decay': 0.0001, 'warmup_steps': 100, 'precision': 'bf16', 'workers': 8, 'seed': 42, 'max_steps': 0, 'limit_unlabeled': 0, 'knn_every': 1, 'knn_k': 20, 'resume': 'runs/ddp10/ckpt.pt'}
+2026-09-17 20:30:27 world_size=2 device=cuda:0
+2026-09-17 20:30:27 WARNING /dev/shm is 67 MB; forcing workers=0 (requested 8)
+2026-09-17 20:30:36 pool=9469 steps/epoch=36 total_steps=396
+2026-09-17 20:30:37 resumed from runs/ddp10/ckpt.pt at epoch=10 step=360
+2026-09-17 20:30:52 step=380 loss=-0.9618 std_ratio=0.98 img/s=344 vram=3.9GB
+2026-09-17 20:31:16 epoch=11 knn_top1=0.9829

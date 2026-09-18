@@ -1,0 +1,17 @@
+{
+  "gpus": "NVIDIA RTX PRO 4000 Blackwell, 24467 MiB, 580.178.04\nNVIDIA RTX PRO 4000 Blackwell, 24467 MiB, 580.178.04",
+  "cuda": "12.8",
+  "torch": "2.11.0+cu128",
+  "python": "3.11.16",
+  "cpu": "Intel(R) Xeon(R) w7-2495X",
+  "cores": "48",
+  "ram": "123Gi",
+  "shm": "64M",
+  "os": "Ubuntu 24.04.4 LTS",
+  "kernel": "7.0.0-31-generic",
+  "nfs": "192.168.247.100:/compartido_serv_unab/home/nmoreno534 40T",
+  "hostname": "jupyter-nmoreno534",
+  "ckpt_epoch": 11,
+  "ckpt_step": 396,
+  "backbone_params": 22056576
+}

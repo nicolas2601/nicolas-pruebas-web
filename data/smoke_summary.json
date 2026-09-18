@@ -1,0 +1,35 @@
+{
+  "config": {
+    "backbone": "dinov2_vits14",
+    "batch_per_gpu": 64,
+    "data_root": "data",
+    "dataset": "imagenette",
+    "epochs": 1,
+    "knn_every": 1,
+    "knn_k": 20,
+    "limit_unlabeled": 4096,
+    "lr_backbone": 1e-05,
+    "lr_heads": 0.001,
+    "max_steps": 30,
+    "output_dir": "runs/smoke",
+    "precision": "bf16",
+    "pretrained": true,
+    "resolution": 112,
+    "resume": "",
+    "seed": 42,
+    "warmup_steps": 100,
+    "weight_decay": 0.0001,
+    "workers": 0
+  },
+  "final_step": 30,
+  "knn": [
+    {
+      "epoch": 0,
+      "knn_top1": 0.9760509554140128
+    },
+    {
+      "epoch": 1,
+      "knn_top1": 0.9814012738853504
+    }
+  ]
+}

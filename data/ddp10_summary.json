@@ -1,0 +1,31 @@
+{
+  "config": {
+    "backbone": "dinov2_vits14",
+    "batch_per_gpu": 128,
+    "data_root": "data",
+    "dataset": "imagenette",
+    "epochs": 11,
+    "knn_every": 1,
+    "knn_k": 20,
+    "limit_unlabeled": 0,
+    "lr_backbone": 1e-05,
+    "lr_heads": 0.001,
+    "max_steps": 0,
+    "output_dir": "runs/ddp10",
+    "precision": "bf16",
+    "pretrained": true,
+    "resolution": 112,
+    "resume": "runs/ddp10/ckpt.pt",
+    "seed": 42,
+    "warmup_steps": 100,
+    "weight_decay": 0.0001,
+    "workers": 0
+  },
+  "final_step": 396,
+  "knn": [
+    {
+      "epoch": 11,
+      "knn_top1": 0.9829299363057324
+    }
+  ]
+}
